@@ -19,8 +19,8 @@ public class Kata2 {
         List<Movie> movies = DataUtil.getMovies();
 
         return movies.stream()
-                .filter(movie -> movie.getRating().equals(5.0))
-                .map(movie -> movie.getId())
+                .filter(filtrarpeliculas -> filtrarpeliculas.getRating().equals(5.0))
+                .map(filtrarpeliculas -> filtrarpeliculas.getId())
                 .collect(Collectors.toList());
     }
 }

@@ -28,14 +28,10 @@ public class Kata1 {
     public static List<ImmutableMap<Integer, String>> execute() {
         List<Movie> movies = DataUtil.getMovies();
 
-        List<ImmutableMap<Integer, String>> peliculitas = movies.stream().map((peliculita)
-                -> ImmutableMap.of(peliculita.getId(), peliculita.getTitle()))
-                   .collect(Collectors.toList());
-
-
+        List<ImmutableMap<Integer, String>> repelis = movies.stream().map((repeli)
+                        -> ImmutableMap.of(repeli.getId(), repeli.getTitle()))
+                           .collect(Collectors.toList());
         ImmutableList.of(ImmutableMap.of("id", 5, "title", "Bad Boys"));
-
-        return peliculitas;
-
+        return repelis;
     }
 }
