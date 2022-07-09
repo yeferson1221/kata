@@ -18,6 +18,16 @@ import java.util.stream.Collectors;
     Output: List of ImmutableMap.of("id", "5", "title", "Bad Boys", "boxart": "url)
 */
 public class Kata7 {
+    /**
+     * [
+     *  Metodo execute() el cual contine una lista movies, aqui se accede a una lista  se debe imprimir
+     *  lista de pelis con su  imagen  id nombre o titulo uso el flatMap
+     * @version [1,0.0]
+     *
+     * @author [Yeferson Valencia, alejandro.yandd@gmail.com   ]
+     * @since [1,0,0]
+     *
+     */
     public static List<Map> execute() {
         List<MovieList> movieLists = DataUtil.getMovieLists();
 

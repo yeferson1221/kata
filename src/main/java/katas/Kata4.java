@@ -1,8 +1,5 @@
 package katas;
 
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableMap;
-import model.BoxArt;
 import model.MovieList;
 import util.DataUtil;
 
@@ -16,6 +13,17 @@ import java.util.stream.Collectors;
     Output: List of ImmutableMap.of("id", "5", "title", "Bad Boys", "boxart": BoxArt)
 */
 public class Kata4 {
+    /**
+     * [
+     *  Metodo execute() el cual contine una lista movies, aqui se accede a una lista  interna y se toma id
+     *  titulo la url de la imagen Map.of accedo con get  a los datos que voy a imprimir que son recorridos con el map
+     *  y impresos  .collect(Collectors.toList()
+     * @version [1,0.0]
+     *
+     * @author [Yeferson Valencia, alejandro.yandd@gmail.com   ]
+     * @since [1,0,0]
+     *
+     */
     public static List<Map> execute() {
         List<MovieList> movieLists = DataUtil.getMovieLists();
 

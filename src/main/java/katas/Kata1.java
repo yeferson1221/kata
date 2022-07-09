@@ -2,9 +2,7 @@ package katas;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
-import model.Bookmark;
-import model.BoxArt;
-import model.InterestingMoment;
+
 import model.Movie;
 import util.DataUtil;
 
@@ -25,13 +23,24 @@ public class Kata1 {
 
         }
 
+    /**
+     * [
+     *  Metodo execute() el cual contine una lista movies  despues creo una lista Inmutable para recorrerla con map
+     *  ImmutableMap <Integer, String> recibe entero y un tipo texto, despues de recorrela con repeli la variable creada
+     *  para recorrer el map accedo con repeli.getId(), repeli.getTitle() al id y nombre con esto imprimo el listado
+     * ]
+     * @version [1,0.0]
+     *
+     * @author [Yeferson Valencia, alejandro.yandd@gmail.com   ]
+     * @since [1,0,0]
+     *
+     */
     public static List<ImmutableMap<Integer, String>> execute() {
         List<Movie> movies = DataUtil.getMovies();
 
         List<ImmutableMap<Integer, String>> repelis = movies.stream().map((repeli)
                         -> ImmutableMap.of(repeli.getId(), repeli.getTitle()))
                            .collect(Collectors.toList());
-        ImmutableList.of(ImmutableMap.of("id", 5, "title", "Bad Boys"));
         return repelis;
     }
 }

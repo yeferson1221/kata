@@ -53,6 +53,17 @@ import java.util.stream.Collectors;
     Output: the given datastructure
 */
 public class Kata10 {
+    /**
+     * [
+     *  Metodo execute() el cual contine una lista nuevas pelis y trailer, despues accedo con un map anidado
+     *  a lal ista peliculas que esta dentro de lista  y filtro por id y nombre que tengan el mismo identificador
+     *  de listya de peliculas y no del trailer
+     * @version [1,0.0]
+     *
+     * @author [Yeferson Valencia, alejandro.yandd@gmail.com   ]
+     * @since [1,0,0]
+     *
+     */
     public static List<Map> execute() {
         List<Map> lists = DataUtil.getLists();
         List<Map> videos = DataUtil.getVideos();
@@ -61,8 +72,7 @@ public class Kata10 {
                         Map.of("name", nombrePeli.get("name"),
                                 "videos", videos.stream()
                                         .filter(video -> Objects.equals(nombrePeli.get("id"), video.get("listId")))
-                                        .map(
-                                                video -> Map.of("id", video.get("id"), "title", video.get("title"))
+                                        .map(video -> Map.of("id", video.get("id"), "title", video.get("title"))
                                         )
                                         .collect(Collectors.toList())
                         )

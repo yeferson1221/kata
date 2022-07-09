@@ -3,38 +3,62 @@ import static org.junit.Assert.*;
 
 public class Main {
     public static void main(String[] args) {
+        /*
+         * se imprime tambien el resultado en consola con el fin de facilitar la revision de cada punto
+         * mostrando  la listas
+         */
         assertEquals(Kata1.execute().size(), 4);
-        System.out.println("Kata 1 solved!");
+        System.out.println("Kata 1 solved!: "+Kata1.execute());
+        System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
 
         assertEquals(Kata2.execute().size(), 2);
-        System.out.println("Kata 2 solved!");
+        System.out.println("Kata 2 solved!: "+Kata2.execute());
+        System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+
 
         assertEquals(Kata3.execute().size(), 4);
-        System.out.println("Kata 3 solved!");
+        System.out.println("Kata 3 solved!: "+Kata3.execute());
+        System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+
 
         assertEquals(Kata4.execute().size(), 4);
-        System.out.println("Kata 4 solved!");
+        System.out.println("Kata 4 solved!: "+Kata4.execute());
+        System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+
 
         assertEquals(Kata5.execute(), 5.0, 0.0);
-        System.out.println("Kata 5 solved!");
+        System.out.println("Kata 5 solved!: "+Kata5.execute());
+        System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+
 
         assertEquals(Kata6.execute(), "http://cdn-0.nflximg.com/images/2891/Fracture300.jpg");
-        System.out.println("Kata 6 solved!");
+        System.out.println("Kata 6 solved!: "+Kata6.execute());
+        System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
 
-        assertEquals(Kata7.execute().size(), 3);
-        System.out.println("Kata 7 solved!");
+
+        assertEquals(Kata7.execute().size(), 4);
+        System.out.println("Kata 7 solved!: "+Kata7.execute());
+        System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+
 
         assertEquals(Kata8.execute().size(), 3);
-        System.out.println("Kata 8 solved!");
+        System.out.println("Kata 8 solved!: "+Kata8.execute());
+        System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+
 
         assertEquals(Kata9.execute().size(), 4);
-        System.out.println("Kata 9 solved!");
+        System.out.println("Kata 9 solved!: "+Kata9.execute());
+        System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+
 
         assertEquals(Kata10.execute().size(), 2);
-        System.out.println("Kata 10 solved!");
+        System.out.println("Kata 10 solved!: "+ Kata10.execute());
+        System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+
 
         assertEquals(Kata11.execute().size(), 2);
-        System.out.println("Kata 11 solved!");
+        System.out.println("Kata 11 solved!: "+Kata11.execute());
+        System.out.println("___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
 
         System.out.println("ALL DONE, you're a functional programming NINJA!");
     }

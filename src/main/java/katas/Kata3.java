@@ -14,10 +14,17 @@ import java.util.stream.Collectors;
     Output: List of Integers
 */
 public class Kata3 {
+    /**
+     * [
+     *  Metodo execute() el cual contine una lista movies, en esta solo se debe imprimir el lisatdp de IDS de tipo Integer
+     * @version [1,0.0]
+     *
+     * @author [Yeferson Valencia, alejandro.yandd@gmail.com   ]
+     * @since [1,0,0]
+     *
+     */
     public static List<Integer> execute() {
         List<MovieList> movieLists = DataUtil.getMovieLists();
-
-
         return movieLists.stream()
                 .map(movie -> movie.getVideos())
                 .flatMap(videos -> videos.stream())
