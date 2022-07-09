@@ -20,6 +20,17 @@ import java.util.stream.Stream;
     Output: List of ImmutableMap.of("id", 5, "title", "some title", "time", new Date(), "url", "someUrl")
 */
 public class Kata9 {
+    /**
+     * [
+     *  Metodo execute() el cual contine una lista movies,y la lista de Bookmark  saco el id  de cada uno
+     *  utulizo un Map of para celeccionarlos "videoId", movie.getId(), "bookmarkId", bookMark.getId()
+     *  y los imprimo en un coleccion .collect(Collectors.toList());
+     * @version [1,0.0]
+     *
+     * @author [Yeferson Valencia, alejandro.yandd@gmail.com   ]
+     * @since [1,0,0]
+     *
+     */
     public static List<Map> execute() {
         List<MovieList> movieLists = DataUtil.getMovieLists();
 

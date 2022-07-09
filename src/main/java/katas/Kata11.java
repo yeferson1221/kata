@@ -59,6 +59,18 @@ import java.util.stream.Collectors;
     Output: the given datastructure
 */
 public class Kata11 {
+    /**
+     * [
+     *  Metodo execute() el cual contine4 listas donde buscamos en la lista dentro de las listas el array mas pequeño
+     *  tanto de nuevas peliculas y trailer depues se imprimen  utilizo map aninado para recorrer cada una de las listas
+     *  y con la clase Map.of selecciono con los get y filtro por id para imprimir la lisra que cumple con la condiccion
+     * ]
+     * @version [1,0.0]
+     *
+     * @author [Yeferson Valencia, alejandro.yandd@gmail.com   ]
+     * @since [1,0,0]
+     *
+     */
     public static List<Map> execute() {
         List<Map> lists = DataUtil.getLists();
         List<Map> videos = DataUtil.getVideos();
