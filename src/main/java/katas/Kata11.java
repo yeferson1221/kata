@@ -78,18 +78,18 @@ public class Kata11 {
         List<Map> bookmarkList = DataUtil.getBookmarkList();
 
         return lists.stream()
-                .map(listaMusica ->
-                        Map.of("name", listaMusica.get("name"),
+                .map(listaPelis ->
+                        Map.of("name", listaPelis.get("name"),
                                 "videos", videos.stream()
-                                        .filter(video -> Objects.equals(listaMusica.get("id"), video.get("listId")))
+                                        .filter(video -> Objects.equals(listaPelis.get("id"), video.get("listId")))
                                         .map(
-                                                video -> Map.of("id", video.get("id"),
-                                                        "title", video.get("title"),
-                                                        "boxart", boxArts.stream()
-                                                                .filter(boxArt -> Objects.equals(boxArt.get("videoId"), video.get("id")))
+                                                video -> Map.of("id", video.get("id"), "title", video.get("title"), "boxart", boxArts.stream()
+                                                                .filter(boxArt -> Objects.equals(boxArt.get("videoId"),
+                                                                        video.get("id")))
                                                                 .map(boxArt -> boxArt.get("url")),
                                                         "time", bookmarkList.stream()
-                                                                .filter(bookmark -> Objects.equals(bookmark.get("videoId"), video.get("id")))
+                                                                .filter(bookmark -> Objects.equals(bookmark.get("videoId"),
+                                                                        video.get("id")))
                                                                 .map(bookmark -> bookmark.get("time"))
                                                 )
                                         )
